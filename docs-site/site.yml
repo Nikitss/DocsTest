@@ -1,0 +1,15 @@
+site:
+  title: NIKITKO Demo Site
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://antora.1111.com
+  start_page: component-a::Attributes11.adoc
+content:
+  sources:
+  # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
+  - url: ./demo-component-a
+    branches: master
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Variables (Переменные) :: NIKITKO Demo Site</title>
+    <link rel="canonical" href="https://antora.1111.com/component-a/1.5.6/Attributes11.html">
+    <meta name="generator" content="Antora 2.1.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://antora.1111.com">NIKITKO Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="component-a" data-version="1.5.6">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="inline-text-formatting.html">Component A</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DOCA</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DOCA2</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="Attributes11.html">DOOOOOOOOOC2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lists</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="lists/ordered-list.html">Ordered List</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="lists/unordered-list.html">Unordered List</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Component A</span>
+    <span class="version">1.5.6</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Component A</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="inline-text-formatting.html">1.5.6</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main role="main">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="Attributes11.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="inline-text-formatting.html">Component A</a></li>
+    <li>DOCA</li>
+    <li>DOCA2</li>
+    <li><a href="Attributes11.html">DOOOOOOOOOC2</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Users/Nikit/Documents/docs-site/demo-component-a/modules/ROOT/pages/Attributes11.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1 class="page">Variables (Переменные)</h1>
+<div id="preamble">
+<div class="sectionbody">
+<h4 id="_назначение" class="discrete">Назначение:</h4>
+<div class="paragraph">
+<p>Используются для установления и получения значений из объекта</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-title.png" alt="values title">
+</div>
+</div>
+<h4 id="_атрибуты" class="discrete">Атрибуты:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [Variable(English: "flame speed", Russian: "скорость горения")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут помечает свойство (property) доступной для установки в GoogleBlockly.
+Блоки установки или получения  значение переменной, будут зависить от её видимости (приватный или публичный доступ), написанный в коде объекта.
+В передаваемых в атрибут параметрах мы указываем локализованный текст, который будет отображаться в блоке,  в зависимости от выбранного языка</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [VariableGroup("flames")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут для включения переменной в группу блоков GoogleBlockly в разделе &#8220;Переменные&#8221;.
+Блоки с одинаковыми именами будут группироваться и отображаться в всплывающем списке (в примере с атрибутом указано  имя группы  &#8220;flames&#8221;).
+В случае не указания данного атрибута, блок не будет группироваться с другими, и останется отдельным элементом.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-list-example.png" alt="values list example">
+</div>
+</div>
+<h4 id="_пример_кода_объекта" class="discrete">Пример кода объекта:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [VariableGroup("flames")]
+    [Variable(English: "flame speed", Russian: "скорость горения")]
+    public float FlameSpeed
+    {
+        get =&gt; return _flameSpeed;
+        private set =&gt; _flameSpeed = value;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере создается блок только для получения значения.
+Блок с заданием значения не создастся из за того,  что set для property является приватным.
+Тип переменной является числом и может участвовать только  в математических блоках.</p>
+</div>
+<div class="paragraph">
+<p>В следующем примере мы рассмотрим строковую переменную</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [VariableGroup("main texts")]
+    [Variable(English: "text", Russian: "текст")]
+    public string TextPanel
+    {
+        get =&gt; return _text;
+        set =&gt; _text = value;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Данная переменная будет участвовать только в строковых блоках</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-text-type.png" alt="values text type">
+</div>
+</div>
+<div class="paragraph">
+<p>Аналогично можно создать переменную с булиевым типом, в результате получится блок, который будет учавствовать только в  логических блоках и будет выглядеть вот так:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-bool-type.png" alt="values bool type">
+</div>
+</div>
+<h4 id="_примеры_использования_в_googleblockly" class="discrete">Примеры использования в GoogleBlockly</h4>
+<div class="paragraph">
+<p>для чисел:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-blockly-numeric-example.png" alt="values blockly numeric example">
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере выполняется следующая логика: Если объект 21, является игроком, то устанавливается значение переменной  &#8220;скорость горения&#8221; для объекта огонь 29, иначе увеличивается значение переменной onStreet на значение переменной  &#8220;скорость горения&#8221;, полученной из объекта огонь 29</p>
+</div>
+<div class="paragraph">
+<p>для строк</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/values-blockly-string-example.png" alt="values blockly string example">
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере выполняется следующая логика:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>для переменной &#8220;текст&#8221; объекта &#8220;текстовая панель&#8221; 81 устанавливаем текст &#8220;Привет мир!!!&#8221;</p>
+</li>
+<li>
+<p>устанавливаем значение переменной &#8220;some text&#8221; приведенную к заглавным буквам значение  переменной &#8220;текст&#8221;  объекта &#8220;текстовая панель&#8221; 81 (значение переменной будет &#8220;ПРИВЕТ МИР!!!&#8221;)</p>
+</li>
+<li>
+<p>для переменной &#8220;текст&#8221; объекта &#8220;текстовая панель&#8221; 81 устанавливаем текст созданный из двух слов &#8220;Скорость горения:&#8221;  и приведенной к строке численной переменной &#8220;скорость горения&#8221; из объекта &#8220;огонь 29&#8221; (значение переменной будет  &#8220;Скорость горения: Х&#8221;, (где X - значение переменной &#8220;скорость горения&#8221;)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1 id="_checker" class="sect0"><a class="anchor" href="#_checker"></a>Checker</h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="_images/checker-title.png" alt="checker title">
+</div>
+</div>
+<h4 id="_назначение_2" class="discrete">Назначение:</h4>
+<div class="paragraph">
+<p>Используются для логических блоков в условиях.
+Всегда имеет логический тип и возвращает правду или ложь (true or false)</p>
+</div>
+<h4 id="_атрибуты_2" class="discrete">Атрибуты:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [Checker(English: "was the object dressed {0}", Russian: "был ли одет объект {0}")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут помечает метод (method), возвращающий логический тип.
+В передаваемых в атрибут параметрах мы указываем  локализованный текст, который будет отображаться в блоке, в зависимости от выбранного языка.
+В фигурные скобки попадают входные параметры в порядке объявления, начиная с {0}.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [CheckerGroup("wear controls")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут для включения checker в группу блоков GoogleBlockly в разделе &#8220;Логика&#8221;.
+Блоки с одинаковыми именами будут группироваться и отображаться в всплывающем списке (в примере с атрибутом указано  имя группы  &#8220;wear controls&#8221;).
+В случае не указания данного атрибута, блок не будет группироваться с другими,  и останется отдельным элементом</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Можно группировать блоки, только с одинаковыми входными параметрами (количество и типы параметров должны быть идентичны)</p>
+</div>
+</blockquote>
+</div>
+<h4 id="_пример_кода_объекта_2" class="discrete">Пример кода объекта:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [CheckerGroup("wear controls)]
+    [Checker(English: "was the object dressed {0}", Russian: "был ли одет объект {0}")]
+    public bool IsPlayerDressObject(Wrapper wear)
+    {
+        return _wears[wear];
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере используется публичный метод, возвращающий булевое значение.
+Данный блок мы расмотрим в следюущем примере.
+Метод может содержать параметры, которые могут являтся любым из типов указанных [тут]<br></p>
+</div>
+<h4 id="_примеры_использования_в_googleblockly_2" class="discrete">Примеры использования в GoogleBlockly</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/checker-blockly-example.png" alt="checker blockly example">
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере реализована следующая логика: Если объект "контроллер одежды 187" вернёт правду, передавая ему объект 184, то установить объекту "реле 190" значение переменной "включён" объекта "реле 194"</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_action"><a class="anchor" href="#_action"></a>Action</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/action-title.png" alt="action title">
+</div>
+</div>
+<h4 id="_назначение_3" class="discrete">Назначение:</h4>
+<div class="paragraph">
+<p>Вызов методов у объектов.
+С помощию actions можно задавать объекту определенное поведение, движение, изменение свойств и прочее.
+По сути это может быть любой метод, который не подразумевает возвращаемое значение, проброшенный в GoogleBlockly.
+Action может принимать неаграниченное количество параметров, которые могут являтся любым из типов указанных [тут]</p>
+</div>
+<h4 id="_атрибуты_3" class="discrete">Атрибуты:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [Action(English: "add check  item text {0}", Russian: "добавить пункт текст {0}")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут помечает метод (method), возвращающий void.
+В передаваемых в атрибут параметрах мы указываем  локализованный текст, который будет отображаться в блоке, в зависимости от выбранного языка.
+В фигурные скобки попадают входные параметры в порядке объявления, начиная с {0}.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [ActionGroup("devices")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут для включения действия в группу блоков GoogleBlockly в разделе &#8220;Действия&#8221;.
+Блоки с одинаковыми именами будут группироваться и отображаться в всплывающем списке (в примере с атрибутом указано  имя группы  &#8220;devices&#8221;).
+В случае не указания данного атрибута, блок не будет группироваться с другими,  и останется отдельным элементом</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Можно группировать блоки, только с одинаковыми входными параметрами (количество и типы параметров должны быть идентичны)</p>
+</div>
+</blockquote>
+</div>
+<h4 id="_пример_кода_объекта_3" class="discrete">Пример кода объекта:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [ActionGroup("devices")]
+    [Action(English: "add check item text {0}", Russian: "добавить пункт текст {0}")]
+    public void AddCheckItem(string text)
+    {
+        _checkItems.Add(text);
+        _tablet.UpdateItemList(_checkItems);
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере используется публичный метод, возвращающий void.
+Данный блок мы расмотрим в следюущем примере.
+Метод может содержать параметры, которые могут являтся любым из типов указанных [тут]</p>
+</div>
+<h4 id="_примеры_использования_в_googleblockly_3" class="discrete">Примеры использования в GoogleBlockly</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/action-blockly-example.png" alt="action blockly example">
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере реализована следующая логика:</p>
+</div>
+<div class="paragraph">
+<p>Если количество зафиксированных нарушений в объекте "планшет 61" меньше пяти, то:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>очистить все пункты в объекте "планшет 61"</p>
+</li>
+<li>
+<p>добавить новый пункт с текстом "Cфотографировать 5 нарушений" в объекте "планшет 61"</p>
+</li>
+<li>
+<p>отправить сообщение в объект "планшет 61" с текстом: "Добавлено новое задание!
+Прочтите его в чеклисте.
+Вы уже зафиксировали X из 5 нарушений"  (где X - значение переменной "количество зафиксированный нарушений" в объекте "планшет 61")</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Иначе (если количество зафиксированных нарушений в объекте "планшет 61" больше или равно пяти)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>отправить сообщение в объект "планшет 61" с текстом: "Сообщите о зафиксированных нарушениях начальнику смены"</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1 id="_function" class="sect0"><a class="anchor" href="#_function"></a>Function</h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="_images/function-title.png" alt="function title">
+</div>
+</div>
+<h4 id="_назначение_4" class="discrete">Назначение:</h4>
+<div class="paragraph">
+<p>Вызов методов у объектов, с целью получения значения.
+Имеет такой же функционал что и у действий, только с  возвращаемым значением.</p>
+</div>
+<h4 id="_атрибуты_4" class="discrete">Атрибуты:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [Function(English: "sum of {0} and {1}", Russian: "сложить {0} и {1}")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут помечает метод (method), который возвращает значение.
+В передаваемых в атрибут параметрах мы указываем  локализованный текст, который будет отображаться в блоке, в зависимости от выбранного языка.
+В фигурные скобки попадают входные параметры в порядке объявления, начиная с {0}.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [FunctionGroup("math")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут для включения функции в группу блоков GoogleBlockly в разделе &#8220;Функции&#8221;.
+Блоки с одинаковыми именами будут группироваться и отображаться в всплывающем списке (в примере с атрибутом указано  имя группы  &#8220;math&#8221;).
+В случае не указания данного атрибута, блок не будет группироваться с другими,  и останется отдельным элементом</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Можно группировать блоки, только с одинаковыми входными параметрами (количество и типы параметров должны быть идентичны)</p>
+</div>
+</blockquote>
+</div>
+<h4 id="_пример_кода_объекта_4" class="discrete">Пример кода объекта:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [FunctionGroup("math")]
+    [Function(English: "sum of {0} and {1}", Russian: "сложить {0} и {1}")]
+    public float Sum(float a, float b)
+    {
+        return a + b;
+    }</code></pre>
+</div>
+</div>
+<h4 id="_примеры_использования_в_googleblockly_4" class="discrete">Примеры использования в GoogleBlockly</h4>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>В разработке</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_events"><a class="anchor" href="#_events"></a>Events</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/event-title.png" alt="event title">
+</div>
+</div>
+<h4 id="_назначение_5" class="discrete">Назначение:</h4>
+<div class="paragraph">
+<p>События используются тогда, когда не нужно проверять что либо каждый кадр, а нужно сделать подписку на  какое либо действие, которое случилось с объектом.
++ Например:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>кнопку нажали</p>
+</li>
+<li>
+<p>объект упал на землю</p>
+</li>
+<li>
+<p>надели экипировку</p>
+</li>
+<li>
+<p>и т.д.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>При срабатывании события выполняются блоки, помещенные внутрь блока события</p>
+</div>
+<h4 id="_атрибуты_5" class="discrete">Атрибуты:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [Event(English: "on wear dressed", Russian: "на одевание одежды")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут помечает событие (event).
+В передаваемых в атрибут параметрах мы указываем  локализованный текст, который будет отображаться в блоке, в зависимости от выбранного языка.
+В фигурные скобки попадают входные параметры делегата в порядке объявления, начиная с {0}.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    [EventGroup("dress events")]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Атрибут для включения события в группу блоков GoogleBlockly в разделе &#8220;События&#8221;.
+Блоки с одинаковыми именами будут группироваться и отображаться в всплывающем списке (в примере с атрибутом указано  имя группы  &#8220;dress events&#8221;).
+В случае не указания данного атрибута, блок не будет группироваться с другими,  и останется отдельным элементом</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Можно группировать блоки, только с одинаковыми входными параметрами делегата (количество и типы параметров должны  быть идентичны)</p>
+</div>
+</blockquote>
+</div>
+<h4 id="_пример_кода_объекта_5" class="discrete">Пример кода объекта:</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">    public delegate void DressWearHandler(Wrapper wear);
+
+    [EventGroup("dress events")]
+    [Event(English: "on wear dressed", Russian: "на одевание одежды")]
+    public event DressWearHandler WearDressed;
+
+    protected virtual void OnWearDressed(Wrapper wear)
+    {
+        WearDressed?.Invoke(wear);
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере мы объявляем делегат DressWearHandler принимающий параметр wear типа Wrapper.
+Далее объявляем событие WearDressed на DressWearHandler.
+Метод OnWearDressed(Wrapper wear) планируем вызывать когда игрок надевает одежду.
+Он и будет вызывать событие, которое проброшено в GoogleBlockly.
+Пример блока расмотрим далее.</p>
+</div>
+<h4 id="_примеры_использования_в_googleblockly_5" class="discrete">Примеры использования в GoogleBlockly</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/event-blockly-example.png" alt="event blockly example">
+</div>
+</div>
+<div class="paragraph">
+<p>В данном примере отрабатывается следующая логика:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>В момент инизиализации мира создаём пустой список с именем "playerWear"</p>
+</li>
+<li>
+<p>Когда игрок одевает одежду (переменная "wear", приходит из объекта "контроллер одежды") :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Если одеваемая одежда является типом куртка, то присваиваем текст для переменной playerMessage    "Вы надели куртку!
+Защита от порезов увеличена"</p>
+</li>
+<li>
+<p>Если одеваемая одежда является типом противогаз, то присваиваем текст для переменной playerMessage    "Вы надели противогаз!
+Защита от ядовитых газов увеличена"</p>
+</li>
+<li>
+<p>Добавляем в список "playerWear" новый элемент wear</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
